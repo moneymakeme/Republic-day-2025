@@ -1,0 +1,58 @@
+/* Resetting default margin and padding */
+body {
+    margin: 10;
+    padding: 10;
+}
+
+/* Container for the flag */
+.flag {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* First color band - saffron */
+.flag .color1 {
+    position: absolute;
+    width: 100%;
+    height: 33vh;
+    background: #ff9933;
+}
+
+/* Second color band - green */
+.flag .color2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33vh;
+    background: #128807;
+}
+
+/* Asoka Chakra positioning */
+img {
+
+    position: relative;
+    top: 177.5px;
+    left: 200px;
+    max-width: 30%; /* Ensures the chakra image fits well on all screen sizes */
+}
+
+
+@media (min-width:701px){
+  
+    img{
+        min-width: 10%;
+        left: 44%;   
+        
+        animation: rotate 26s linear infinite;
+    }
+
+    @keyframes rotate {
+    
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+}
